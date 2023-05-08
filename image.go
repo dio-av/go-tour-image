@@ -3,6 +3,8 @@ package main
 import (
 	"image"
 	"image/color"
+
+	"golang.org/x/tour/pic"
 )
 
 type Image struct {
@@ -17,9 +19,9 @@ func (m Image) Bounds() image.Rectangle {
 	return image.Rect(0, 0, m.Height, m.Width)
 }
 
-func (m Image) At(xm y int) color.Color {
-	c := uint8(2*(x-x*x)-2*(y*y-y))
-	return color.RGBA(c, c, 255, 255)
+func (m Image) At(x, y int) color.Color {
+	c := uint8(2*(x-x*x) - 2*(y*y-y))
+	return color.RGBA{c, c, 255, 255}
 }
 
 func main() {
