@@ -2,7 +2,8 @@
 
 Code using OOP golang concepts generating an image with pixel manipulation.   
 
-Result image: 
+Result image: <br>
+
 [![fractal image](image.png)]("image.png")
 
 This line of code manipulate the image 
